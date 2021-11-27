@@ -36,10 +36,10 @@ export class UserManagementComponent implements OnInit {
         roles: this.getRolesArray(user)
       }
     }
-    debugger;
+    
     this.bsModalRef = this.modalService.show(RolesModalComponent, config);
     this.bsModalRef.content.updateSelectedRoles.subscribe(values => {
-      debugger;
+      
       const rolesToUpdate = {
         roles: [...values.filter(el => el.checked === true).map(el => el.name)]
       };
@@ -53,7 +53,7 @@ export class UserManagementComponent implements OnInit {
 
 
   private getRolesArray(user){
-    debugger;
+    
     const roles = [];
     const userRoles = user.roles;
     const availableRoles : any[]= [
@@ -66,7 +66,7 @@ export class UserManagementComponent implements OnInit {
       let isMatch = false;
       for(const userRole of userRoles){
         if(role.name === userRole){
-          debugger;
+          
           isMatch = true;
           role.checked=true;
           roles.push(role);

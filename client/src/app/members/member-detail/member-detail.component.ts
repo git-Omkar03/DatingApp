@@ -73,6 +73,7 @@ getImages() : NgxGalleryImage[] {
   }
 
   loadMember() {
+   
     this.memberService.getMember(this.route.snapshot.paramMap.get('username')).subscribe(member => {
       this.member = member;
       this.galleryImages = this.getImages();
@@ -80,6 +81,7 @@ getImages() : NgxGalleryImage[] {
   }
 
   loadMessage(){
+    
     this.messageService.getMessageThread(this.member.userName).subscribe(
       messages => {
         this.messages = messages;
