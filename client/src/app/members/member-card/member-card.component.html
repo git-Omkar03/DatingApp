@@ -6,7 +6,7 @@
         >
         <ul class="list-inline member-icons animate text-center">
             <li class="list-inline-item">
-                <button routerLink='/members/{{member.username}}' class="btn btn-primary">
+                <button routerLink='/members/{{member.userName}}' class="btn btn-primary">
                     <i class="fa fa-user"></i>
                 </button>
             </li> 
@@ -16,8 +16,8 @@
                 </button>
             </li> 
             <li class="list-inline-item">
-                <button
-                routerLink='/members/{{member.username}}'
+                <button 
+                routerLink='/members/{{member.userName}}'
                 [queryParams]='{tab: 3}'
                 class="btn btn-primary">
                     <i class="fa fa-envelope"></i>

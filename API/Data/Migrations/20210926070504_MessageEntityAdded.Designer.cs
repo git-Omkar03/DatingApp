@@ -60,7 +60,7 @@ namespace API.Data.Migrations
                     b.Property<byte[]>("PasswordSalt")
                         .HasColumnType("BLOB");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("UserName")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -86,7 +86,7 @@ namespace API.Data.Migrations
                     b.Property<int>("ReceipientId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ReceipientUsername")
+                    b.Property<string>("ReceipientUserName")
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("RecipientDeleted")
@@ -101,7 +101,7 @@ namespace API.Data.Migrations
                     b.Property<int>("SenderId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("SenderUsername")
+                    b.Property<string>("SenderUserName")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

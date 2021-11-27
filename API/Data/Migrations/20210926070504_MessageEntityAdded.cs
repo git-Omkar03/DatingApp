@@ -14,9 +14,9 @@ namespace API.Data.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     SenderId = table.Column<int>(type: "INTEGER", nullable: false),
-                    SenderUsername = table.Column<string>(type: "TEXT", nullable: true),
+                    SenderUserName = table.Column<string>(type: "TEXT", nullable: true),
                     ReceipientId = table.Column<int>(type: "INTEGER", nullable: false),
-                    ReceipientUsername = table.Column<string>(type: "TEXT", nullable: true),
+                    ReceipientUserName = table.Column<string>(type: "TEXT", nullable: true),
                     RecipientId = table.Column<int>(type: "INTEGER", nullable: true),
                     Content = table.Column<string>(type: "TEXT", nullable: true),
                     DateRead = table.Column<DateTime>(type: "TEXT", nullable: true),

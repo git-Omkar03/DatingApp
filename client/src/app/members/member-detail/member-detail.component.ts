@@ -80,7 +80,7 @@ getImages() : NgxGalleryImage[] {
   }
 
   loadMessage(){
-    this.messageService.getMessageThread(this.member.username).subscribe(
+    this.messageService.getMessageThread(this.member.userName).subscribe(
       messages => {
         this.messages = messages;
       } 

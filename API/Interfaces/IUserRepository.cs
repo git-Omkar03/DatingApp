@@ -17,10 +17,10 @@ namespace API.Interfaces
 
         Task<AppUser> GetUserByIdAsync(int id);
 
-        Task<AppUser> GetUserByUserNameAsync(string username);
+        Task<AppUser> GetUserByUserNameAsync(string UserName);
 
         Task<PagedList<MemberDTO>> GetMembersAsync(UserParams userParams);
 
-        Task<MemberDTO> GetMemberAsync(string username);
+        Task<MemberDTO> GetMemberAsync(string UserName);
     }
 }
