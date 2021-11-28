@@ -31,8 +31,7 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit(): void {
     
-     this.route.data.subscribe(data => {
-       
+     this.route.data.subscribe(data => {   
        this.member = data.member;
      })
    
@@ -74,7 +73,7 @@ getImages() : NgxGalleryImage[] {
 
   loadMember() {
    
-    this.memberService.getMember(this.route.snapshot.paramMap.get('username')).subscribe(member => {
+    this.memberService.getMember(this.route.snapshot.paramMap.get('userName')).subscribe(member => {
       this.member = member;
       this.galleryImages = this.getImages();
     })

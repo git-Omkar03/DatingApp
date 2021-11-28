@@ -13,7 +13,7 @@ export class MemberDetailedResolver implements Resolve<Member> {
 
     resolve(route: ActivatedRouteSnapshot): Observable<Member> {
         
-        return this.memberService.getMember(route.paramMap.get('username'));
+        return this.memberService.getMember(route.paramMap.get('userName'));
     }
 
 }
